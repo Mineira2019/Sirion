@@ -25,7 +25,7 @@ Future Developing: 5v5, Specific Player
 Credits: Flameshot http://flameshot.tk
 		 LilleCarl
 EndScriptData */
-#include "..\ArenaSpectator\Arena_Spectator_menu.h"
+#include "../../Auxiliares/ArenaSpectator/Arena_Spectator_menu.h"
 
 int8 UsingGossip;
 

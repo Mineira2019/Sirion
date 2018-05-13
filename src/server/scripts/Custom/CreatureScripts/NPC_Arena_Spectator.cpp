@@ -26,7 +26,7 @@ Credits: Flameshot http://flameshot.tk
 		 LilleCarl
 EndScriptData */
 
-#include "..\Auxiliares\ArenaSpectator\Arena_Spectator_menu.h"
+#include "../Auxiliares/ArenaSpectator/Arena_Spectator_menu.h"
 
 class npc_arena_spectator : public CreatureScript
 {

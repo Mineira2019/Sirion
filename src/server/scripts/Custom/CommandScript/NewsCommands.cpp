@@ -16,7 +16,7 @@ http://rochet2.github.io/
 #include "DatabaseEnv.h"
 #include "ScriptedGossip.h"
 #include "WorldSession.h"
-#include "Chat\Chat.h"
+#include "Chat/Chat.h"
 
 
 

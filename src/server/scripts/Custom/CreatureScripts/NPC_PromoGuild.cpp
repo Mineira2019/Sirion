@@ -1,5 +1,5 @@
 
-#include "..\Auxiliares\Promo\Promo.h"
+#include "../Auxiliares/Promo/Promo.h"
 
 class npc_GuildPromotion : public CreatureScript
 {
