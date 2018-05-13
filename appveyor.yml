@@ -37,9 +37,9 @@ before_build:
     mkdir build
     cd build
     cmake --version
-    cmake .. -G %generator%
-build:
-  project: c:\projects\sirion\build\TrinityCore.sln
+    cmake ../ -DWITH_WARNINGS=1 -DWITH_COREDEBUG=0 -DUSE_COREPCH=1 -DUSE_SCRIPTPCH=1 -DTOOLS=1 -DSCRIPTS=dynamic -DSERVERS=1 
+    
+project: c:\projects\sirion\build\TrinityCore.sln
   verbosity: minimal
   parallel: true
 only_commits:
