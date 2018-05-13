@@ -1,4 +1,4 @@
-#include "..\Auxiliares\Teleport\Teleport_menu.h"
+#include "../Auxiliares/Teleport/Teleport_menu.h"
 
 class ps_teleport : public PlayerScript
 {

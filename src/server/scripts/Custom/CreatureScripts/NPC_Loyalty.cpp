@@ -2,7 +2,7 @@
 Listo para puesta en produccion
 */
 
-#include "..\Auxiliares\Loyalty\Loyalty_menu.h"
+#include "../Auxiliares/Loyalty/loyalty_menu.h"
 #include "ScriptMgr.h"
 #include "ScriptedCreature.h"
 #include "ScriptedGossip.h"

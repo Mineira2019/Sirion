@@ -20,7 +20,7 @@
 
 
 #include "ScriptMgr.h"
-#include "..\Auxiliares\Teleport\Teleport_menu.h"
+#include "../Auxiliares/Teleport/Teleport_menu.h"
 
 
 class npc_teleport_gossip : public CreatureScript

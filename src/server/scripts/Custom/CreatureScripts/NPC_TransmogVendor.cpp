@@ -10,7 +10,7 @@ Compatible with Transmogrification 6.1 by Rochet2
 http://rochet2.github.io/Transmogrification
 */
 
-#include "..\Auxiliares\TransmorgVendor\TransmogVendor_menu.h"
+#include "../Auxiliares/TransmorgVendor/TransmogVendor_menu.h"
 #include "TemporarySummon.h"
 
 

@@ -1,4 +1,4 @@
-#include "..\Auxiliares\ArenaSpectator\Arena_Spectator_menu.h"
+#include "../Auxiliares/ArenaSpectator/Arena_Spectator_menu.h"
 
 class ps_arena_spectator : public PlayerScript
 {

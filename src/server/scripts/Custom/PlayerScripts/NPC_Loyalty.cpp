@@ -1,4 +1,4 @@
-#include "..\Auxiliares\Loyalty\Loyalty_menu.h"
+#include "../Auxiliares/Loyalty/loyalty_menu.h"
 class ps_loyalty : public PlayerScript
 {
 public:

@@ -1,4 +1,4 @@
-#include "..\Auxiliares\TransmorgVendor\TransmogVendor_menu.h"
+#include "../Auxiliares/TransmorgVendor/TransmogVendor_menu.h"
 
 class ps_tmorg : public PlayerScript
 {

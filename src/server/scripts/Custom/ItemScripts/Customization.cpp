@@ -15,7 +15,7 @@
 #include "Player.h"
 #include "WorldSession.h"
 #include "World.h"
-#include "..\Auxiliares\Promo\Promo.h"
+#include "../Auxiliares/Promo/Promo.h"
 
 
 
