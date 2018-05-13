@@ -126,14 +126,14 @@ public:
 
 };
 
-class npcTeleportEntrañas : public CreatureScript
+class npcTeleportEntranas : public CreatureScript
 {
 public:
-	npcTeleportEntrañas() : CreatureScript("PortalEntranas"){}
+	npcTeleportEntranas() : CreatureScript("PortalEntranas"){}
 
-	struct npcTeleportEntrañasAI : public ScriptedAI
+	struct npcTeleportEntranasAI : public ScriptedAI
 	{
-		npcTeleportEntrañasAI(Creature* creature) : ScriptedAI(creature){}
+		npcTeleportEntranasAI(Creature* creature) : ScriptedAI(creature){}
 
 		void UpdateAI(uint32 diff)
 		{
@@ -161,7 +161,7 @@ public:
 
 	CreatureAI* GetAI(Creature* creature) const
 	{
-		return new npcTeleportEntrañasAI(creature);
+		return new npcTeleportEntranasAI(creature);
 	};
 
 };
@@ -379,7 +379,7 @@ void AddSC_Portal()
 	new npcTeleportOrgrimmar();	
 	new npcTeleportLunaArgenta();
 	new npcTeleportCimaTrueno();
-	new npcTeleportEntrañas();
+	new npcTeleportEntranas();
 	new npcTeleportExodar();
 	new npcTeleportDarnassus();
 	new npcTeleportForjaz();
