@@ -1,8 +1,10 @@
 # This is a non oficial fork of TrinityCore
 
 ## Build Status
+|Travis|AppVeyor|
+|------|--------|
+|[![Build Status](https://travis-ci.org/JorTurFer/Sirion.svg?branch=master)](https://travis-ci.org/JorTurFer/Sirion)|[![Build status](https://ci.appveyor.com/api/projects/status/7ir4airfqonn90wn?svg=true)](https://ci.appveyor.com/project/kabestrus/sirion)|
 
-[![Build Status](https://travis-ci.org/JorTurFer/Sirion.svg?branch=master)](https://travis-ci.org/JorTurFer/Sirion)[![Build status](https://ci.appveyor.com/api/projects/status/mswsd0gn8ia54ad6?svg=true)](https://ci.appveyor.com/project/kabestrus/sirion)
 
 
 
