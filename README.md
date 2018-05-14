@@ -1,5 +1,7 @@
 # This is a non oficial fork of TrinityCore
 
+This code is provide as is it, and it doesn't have any support
+
 ## Build Status
 |Travis|AppVeyor|
 |------|--------|
