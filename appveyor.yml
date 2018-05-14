@@ -2,14 +2,14 @@ version: '{build}'
 branches:
   only:
   - master
-clone_depth: 1
+#clone_depth: 1
 
 clone_folder: c:\projects\sirion
 image:
 - Visual Studio 2017
 configuration:
 - RelWithDebInfo
-#- Debug
+- Debug
 platform:
 - x64
 environment:
