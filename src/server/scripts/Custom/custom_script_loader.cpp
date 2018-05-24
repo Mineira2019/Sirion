@@ -62,6 +62,7 @@ void AddSC_PromocionGuildCheck();
 void AddSC_ZoneProtector();
 void AddSC_News_commandscript();
 void AddSC_NewsSystemPlayer();
+void AddSC_MountsAdjust();
 
 void AddCustomScripts()
 {
@@ -105,4 +106,5 @@ void AddCustomScripts()
     AddSC_ZoneProtector();
 	AddSC_News_commandscript();
 	AddSC_NewsSystemPlayer();
+	AddSC_MountsAdjust();
 }
