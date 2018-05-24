@@ -678,6 +678,9 @@ public:
 
 	virtual void OnTextEmote(Player* /*player*/, uint32 /*textEmote*/, uint32 /*emoteNum*/, ObjectGuid /*guid*/) { }
 
+    // Called when a Spell is learned
+    virtual void OnSpellLearn(Player* /*player*/,uint32 idSpell) { }
+
 	// Called in Spell::Cast.
 	virtual void OnSpellCast(Player* /*player*/, Spell* /*spell*/, bool /*skipCheck*/) { }
 
@@ -1041,6 +1044,7 @@ public: /* PlayerScript */
 	void OnGossipHelloRequest(Player* player);
 	void OnQuestStatusChange(Player* player, uint32 questId);
 	void OnPlayerRepop(Player* player);
+    void OnSpellLearn(Player* player, uint32 idSpell);
 
 public: /* AccountScript */
 

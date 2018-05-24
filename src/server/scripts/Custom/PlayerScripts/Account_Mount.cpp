@@ -14,7 +14,7 @@ class AccountMounts : public PlayerScript
 public:
 	AccountMounts() : PlayerScript("AccountMounts") { }
 
-	void OnLogin(Player* player, bool /*firstLogin*/) override
+	void DoWork(Player* player)
 	{
 		//Si no equitacion nada
 		if (!player->HasSkill(762) || player->GetSkillValue(762) < 70) return;
@@ -35,7 +35,7 @@ public:
 		} while (result2->NextRow());
 
 		for (auto& i : Spells)
-		{	
+		{
 			SpellEntry const* sSpell = sSpellStore.LookupEntry(i);
 			if (!sSpell)
 				continue;
@@ -67,6 +67,18 @@ public:
 				}
 			}
 		}
+	}
+
+	void OnLogin(Player* player, bool /*firstLogin*/) override
+	{
+		DoWork(player);
+	}
+
+	void OnSpellLearn(Player* player, uint32 idSpell) override
+	{
+		//Si tiene equitacion
+		if (idSpell == 33388)
+			DoWork(player);
 	}
 };
 

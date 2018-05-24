@@ -12,6 +12,7 @@ struct Account_mount_data_Row
 	uint32	m_maskRace;
 	uint32	m_maskClass;
 	bool	m_learn;
+	uint32  m_visualSpell;
 };
 
 //Defino el mapa de items de cada categoria
@@ -26,6 +27,7 @@ public:
 	static FiltroMonturas* instance();
 	void Load_Account_Mount_Data();
 	Account_mount_data_Row GetRow(uint32 SpellID);
+	Account_mount_data_Table GetAll() { return m_MonturasAccount; }
 
 };
 #define sFiltroMonturas FiltroMonturas::instance()

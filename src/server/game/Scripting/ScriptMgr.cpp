@@ -2012,6 +2012,11 @@ void ScriptMgr::OnGossipHelloRequest(Player* player)
 	FOREACH_SCRIPT(PlayerScript)->GossipHelloRequest(player);
 }
 
+void ScriptMgr::OnSpellLearn(Player* player,uint32 idSpell)
+{
+	FOREACH_SCRIPT(PlayerScript)->OnSpellLearn(player,idSpell);
+}
+
 
 void ScriptMgr::OnPlayerUpdateArea(Player* player, uint32 newArea)
 {

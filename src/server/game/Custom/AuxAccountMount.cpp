@@ -4,7 +4,7 @@
 void FiltroMonturas::Load_Account_Mount_Data()
 {
 	m_MonturasAccount.clear();
-	QueryResult resultado = WorldDatabase.Query("Select idSpell,raceMask,classMask,learn from account_mount_data");
+	QueryResult resultado = WorldDatabase.Query("Select idSpell,raceMask,classMask,learn,idSpellVisual from account_mount_data");
 	if (resultado)
 	{
 		int count = 0;
@@ -16,7 +16,8 @@ void FiltroMonturas::Load_Account_Mount_Data()
 			{
 				fields[1].GetUInt32(),
 				fields[2].GetUInt32(),
-				fields[3].GetBool()
+				fields[3].GetBool(),
+				fields[4].GetUInt32()
 			};
 			m_MonturasAccount.insert(Account_mount_data_Table::value_type(fields[0].GetUInt32(), row));
 		} while (resultado->NextRow());
@@ -36,12 +37,14 @@ Account_mount_data_Row FiltroMonturas::GetRow(uint32 SpellID)
 		ret.m_maskRace = itr->second.m_maskRace;
 		ret.m_maskClass = itr->second.m_maskClass;
 		ret.m_learn = itr->second.m_learn;
+		ret.m_visualSpell = itr->second.m_visualSpell;
 	}
 	else
 	{
 		ret.m_learn = 0;
-		ret.m_maskClass = -1;
-		ret.m_maskRace = -1;		
+		ret.m_maskClass = 0;
+		ret.m_maskRace = 0;	
+		ret.m_visualSpell = 0;
 	}
 	return ret;	
 	
