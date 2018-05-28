@@ -27,7 +27,7 @@ EndScriptData */
 #include "AchievementMgr.h"
 #include "AuctionHouseMgr.h"
 #include "AuxAutoLearn.h"
-#include "AuxAccountMount.h"
+#include "AuxAccountSpell.h"
 #include "BattlegroundMgr.h"
 #include "Chat.h"
 #include "CreatureTextMgr.h"
@@ -1208,7 +1208,7 @@ public:
 	static bool HandleReloadAcountMountData(ChatHandler* handler, const char* /*args*/)
 	{
 		TC_LOG_INFO("misc", "Reloading Acount Mount Data table...");
-		sFiltroMonturas->Load_Account_Mount_Data();
+		sFiltroSpells->Load_Account_Spell_Data();
 		handler->SendGlobalGMSysMessage("Acount Mount Data reloaded.");
 		return true;
 	}

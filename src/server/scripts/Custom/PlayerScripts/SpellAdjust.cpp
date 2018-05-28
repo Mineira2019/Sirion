@@ -1,9 +1,9 @@
 #include "Player.h"
-#include "AuxAccountMount.h"
+#include "AuxAccountSpell.h"
 
 void CheckAndRemove(Player* player)
 {
-    for (Account_mount_data_Table::const_iterator itr = sFiltroMonturas->GetAll().begin(); itr != sFiltroMonturas->GetAll().end(); ++itr)
+    for (AccountSpellDataTable::const_iterator itr = sFiltroSpells->GetAll().begin(); itr != sFiltroSpells->GetAll().end(); ++itr)
     {
         if (player->HasSpell(itr->first))
             player->RemoveSpell(itr->second.m_visualSpell);
@@ -11,10 +11,10 @@ void CheckAndRemove(Player* player)
 }
 
 
-class MountsAdjust : public PlayerScript
+class SpellAdjust : public PlayerScript
 {
 public:
-    MountsAdjust() : PlayerScript("SpellsMover") {}
+    SpellAdjust() : PlayerScript("SpellAdjust") {}
 
     void OnLogin(Player* player, bool /*bFirstLogin*/) override
     {
@@ -23,7 +23,7 @@ public:
 
     void OnSpellLearn(Player* player, uint32 idSpell) override
     {
-        auto item = sFiltroMonturas->GetRow(idSpell);
+        auto item = sFiltroSpells->GetRow(idSpell);
         //En caso de que tenga un spell visual
         if (item.m_visualSpell != 0)
         {
@@ -35,7 +35,7 @@ public:
 
 
 
-void AddSC_MountsAdjust()
+void AddSC_SpellAdjust()
 {
-    new MountsAdjust();
+    new SpellAdjust();
 }

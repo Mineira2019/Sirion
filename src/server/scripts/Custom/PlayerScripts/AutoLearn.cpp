@@ -3,11 +3,6 @@
 #include "WorldQueue.h"
 #include "AuxAutoLearn.h"
 
-
-
-
-
-
 class LearnSpellsOnLevelUp : public PlayerScript
 {
 public:
@@ -31,13 +26,9 @@ public:
 					}					
 				}
 			}
-
 		}
-	}
-	
+	}	
 };
-
-
 
 class LearnSpellsOnLevelUp_load : public WorldScript
 {
@@ -49,7 +40,6 @@ public:
 		sAutoLearnItems->LoadAutoLearn();
 	} //Cargo la tabla de Spells	
 };
-
 
 void AddSC_LearnSpellsOnLevelUp()
 {
