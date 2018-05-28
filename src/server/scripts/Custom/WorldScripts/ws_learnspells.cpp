@@ -58,7 +58,7 @@ public:
                             //Si los cumple, lo enseñamos
                             player->LearnSpell(accion.nIdSpell, false);
                             break;
-                        case TYPE_ACCOUNT_MOUNT:
+                        case TYPE_ACCOUNT_SPELL:
                             player->LearnSpell(accion.nIdSpell, false);
                             break;
                         case TYPE_TELEPORT:
